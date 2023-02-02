@@ -1,0 +1,14 @@
+export const host = "https://loving-server.onrender.com";
+export const loginRoute = `${host}/api/auth/login`;
+export const registerRoute = `${host}/api/auth/register`;
+export const updateRoute = `${host}/api/auth/updateUser`;
+export const logoutRoute = `${host}/api/auth/logout`;
+export const allUsersRoute = `${host}/api/auth/allUsers`;
+export const uploadImage = `${host}/api/upload`;
+export const deleteUser = `${host}/api/auth/delete`;
+export const getProfileUser = `${host}/api/auth/profileUser`;
+export const getGenderUser = `${host}/api/auth/getGenderUser`;
+export const addMatch = `${host}/api/auth/addMatch`;
+export const sendMessageRoute = `${host}/api/messages/addMsg`;
+export const receiveMessageRoute = `${host}/api/messages/getMsg`;
+export const getAllMessages = `${host}/api/messages/getAllMsg`;

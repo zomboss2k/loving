@@ -1,0 +1,63 @@
+POST  http://localhost:8080/api/auth/updateUser/638cfc97575967617b92e98c
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNmE2M2M5MGYxOWU1NWZmNjU5NTA0ZiIsImlhdCI6MTY2NzkxNjc0NX0.qx9_lkt2AAJZitovHIsHzaMo9TiPsHvxux11ECIKfWw
+
+{
+    "fullName": "Lê Tiến Đạt",
+    "avatarImage": "http://res.cloudinary.com/letiendat/image/upload/v1669474284/dating/nowu0ip4zikocqemryil.jpg",
+    "gender": "Nam",
+    "address": "Đà Nẵng-VN",
+    "year": "2003",
+    "desc": "Tôi yêu em",
+    "interests": [
+      "Đá bóng",
+      "Xem phim",
+      "Chơi game",
+      "Bóng Bàn",
+      "Đọc sách"
+    ]
+}
+
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "test10",
+  "email": "test10@gmail.com",
+  "password": "letiendat"
+}
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "zomboss",
+  # "email": "test1@gmail.com",
+  "password": "letiendat"
+}
+
+###
+GET http://localhost:8080/api/auth/profileUser/636fc57eef8bed0a3b83df13
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/auth/allUsers/63a78333eea406d4e7bc2563
+Content-Type: application/json
+
+###
+DELETE  http://localhost:8080/api/auth/delete/638093c257275b7b401f04d8
+Content-Type: application/json
+
+###
+GET  http://localhost:8080/api/auth/getGenderUser?gender_like=woman
+Content-Type: application/json
+
+###
+GET  http://localhost:8080/api/auth/getMatch/638324bd472909a9a23a98b6
+Content-Type: application/json
+
+###
+PUT  http://localhost:8080/api/auth/addMatch
+Content-Type: application/json
